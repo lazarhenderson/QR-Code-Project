@@ -1,4 +1,4 @@
-Using Node and NPM to generate QR code image via input from terminal. Code is handled via the terminal.
+Using Node and NPM to generate a QR code image by entering a URL from the terminal.
 
 How to run (ensure Node is installed on PC):
 
