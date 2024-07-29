@@ -1,2 +1,2 @@
-Entered URL: www.google.com
-Image Filename: Google.png
+Entered URL: https://google.com
+Image Filename: Google QR Code

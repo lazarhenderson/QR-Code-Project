@@ -15,7 +15,7 @@ import qr from "qr-image";
 // Function to generate a QR code and save it as an image
 function generateQRCode(url, filename) {
   const qrImage = qr.image(url, { type: "png" });
-  qrImage.pipe(fs.createWriteStream(filename));
+  qrImage.pipe(fs.createWriteStream(`${filename}.png`));
 }
 
 // Prompt the user for input
@@ -24,12 +24,13 @@ inquirer
     {
       type: "input",
       name: "url",
-      message: "Enter the URL to convert to a QR code:",
+      message:
+        "Enter the URL to convert to a QR code (e.g: https://google.com):",
     },
     {
       type: "input",
       name: "filename",
-      message: "Enter the name for the QR code image (e.g., qrcode.png):",
+      message: "Enter the name for the QR code image (e.g., qrcode):",
     },
   ])
   .then((answers) => {
