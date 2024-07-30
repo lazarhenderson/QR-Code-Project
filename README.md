@@ -1,11 +1,25 @@
-Using Node and NPM to generate a QR code image by entering a URL from the terminal.
+# QR Code Generator with Node and NPM
 
-How to run (ensure Node is installed on PC):
+This project uses Node.js and NPM to generate a QR code image by entering a URL from the terminal.
 
-1. Ensure in the correct directory
-2. Install NPM packages - npm i
-3. Run code: node index.js
-4. Enter the URL to convert to a QR code (e.g: https://google.com)
-5. Enter the name for the QR code image (e.g.: qrcode.png)
-6. QR code generated!!!! File will be located in root directory of the project
-7. Your terminal inputs will also be saved to the root directory of the project
+## How to Run
+
+Ensure Node.js is installed on your PC. Then follow these steps:
+
+1. Navigate to the project directory.
+2. Install the required NPM packages:
+
+   ```bash
+   npm install
+   ```
+
+3. Run the code:
+
+   ```bash
+   node index.js
+   ```
+
+4. Enter the URL to convert to a QR code (e.g., `https://google.com`).
+5. Enter the name for the QR code image (e.g., `qrcode.png`).
+
+The QR code will be generated and saved in the root directory of the project. Additionally, your terminal inputs will be saved in the root directory of the project.
